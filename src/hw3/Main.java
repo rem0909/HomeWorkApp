@@ -94,9 +94,7 @@ public class Main {
     public static int[][] getTwoDimArray(int len, int initialValue) {
         int[][] arr = new int[len][len];
         for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-                arr[i][j] = initialValue;
-            }
+            Arrays.fill(arr[i], initialValue);
 
         }
         return arr;
@@ -113,9 +111,7 @@ public class Main {
 
     public static int[] getArray(int len, int initialValue) {
         int[] arr = new int[len];
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = initialValue;
-        }
+        Arrays.fill(arr, initialValue);
         return arr;
     }
 
